@@ -1,32 +1,58 @@
-# gen-ai-travel-planner
+# 🌍 gen-ai-travel-planner: Travel Itinerary Generator
 
-Travel Itinerary Generator
-This is a simple Travel Itinerary Generator using Streamlit and the Google PaLM model for text generation. The app takes user input, such as the city to visit, the number of days for the trip, and user preferences for activities, and generates a personalized itinerary.
+Welcome to **gen-ai-travel-planner**, a user-friendly Travel Itinerary Generator built with Streamlit and powered by Google's PaLM model for text generation. Plan your dream trip with ease and get a personalized itinerary based on your preferences!
 
-Prerequisites
-Before running the app, make sure you have the required dependencies installed. You can install them using the following command:
+## 🚀 Features
 
+- **Personalized Itineraries**: Tailor-made travel plans for any city.
+- **User Preferences**: Customize your itinerary based on your interests.
+- **Easy to Use**: Simple and intuitive interface.
 
-pip install streamlit google.generativeai
-Getting Started
-Clone this repository to your local machine:
+## 📋 Prerequisites
 
+Before you embark on your itinerary planning adventure, ensure you have the necessary dependencies:
+
+```bash
+pip install streamlit google.generativeai ics
+```
+
+## 🛠 Getting Started
+
+Get set up with these quick steps:
+### 1.Clone the Repository
+```bash
 git clone https://github.com/adityachavan198/gen-ai-travel-planner
-Change to the project directory:
-
+```
+### 2.Navigate to the Directory
+```bash
 cd gen-ai-travel-planner
-Set up your Palm API key:
-Obtain an API key from Google.
-Set the API key as an environment variable. You can do this in your terminal:
+```
+### 3. API Key Configuration
+- Obtain an API key from Google.
+- Set it as an environment variable:
+## Linux/Unix:
+```bash
+export PALM_API_KEY=your-api-key
+```
+## Windows:
+```bash
+set PALM_API_KEY=your-api-key
+```
+#### 4.Launch the App
 
-export PALM_API_KEY="your-api-key"
-Run the Streamlit app:
-
+```bash
 streamlit run app.py
-Open your web browser and go to http://localhost:8501 to access the app.
-Usage
-Enter the city you're visiting and the number of days for your trip.
-Check the preferences for activities you're interested in.
-Click the "Generate Itinerary" button to get a personalized itinerary.
-Contributing
-Feel free to contribute to the development of this project by opening issues or submitting pull requests.
+```
+
+Visit 🌐 http://localhost:8501 in your web browser to start planning!
+## 📝 Usage Guide
+- Enter Your Destination: Type in the city you wish to explore.
+- Trip Duration: Specify the number of days for your adventure.
+- Activity Preferences: Select activities that pique your interest.
+- Generate Itinerary: Click the button and watch the magic happen!
+## 💡 Contributing
+Your ideas and contributions are welcome! Feel free to:
+- 🐛 Open issues for any bugs or suggestions.
+- ✨ Submit pull requests with improvements or new features.
+- Let's make travel planning fun and effortless for everyone!
+
