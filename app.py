@@ -15,7 +15,20 @@ print(model)
 st.title("Travel Itinerary Generator")
 
 city = st.text_input("Enter the city you're visiting:")
-days = st.number_input("Enter the number of days for your trip:", min_value=1, max_value=30)
+start_date = st.date_input("Select the start date for your trip:", value=datetime.today())
+
+# Set the maximum end date to 30 days after the start date
+max_end_date = start_date + timedelta(days=30)
+
+# User selects the end date of the trip
+end_date = st.date_input("Select the end date for your trip:", 
+                         value=start_date + timedelta(days=1),  # Default to the next day
+                         min_value=start_date, 
+                         max_value=max_end_date)
+
+# Calculate the number of days between start_date and end_date
+days = (end_date - start_date).days
+#days = st.number_input("Enter the number of days for your trip:", min_value=1, max_value=30)
 
 # User preferences checkboxes
 art = st.checkbox("Art")
@@ -155,5 +168,3 @@ if st.button("Generate Itinerary"):
     # Create a download link
     st.success("Itinerary ready to export!")
     st.markdown(get_download_link(cal_content, "Itinerary.ics"), unsafe_allow_html=True)
-
-
