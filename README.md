@@ -56,3 +56,9 @@ Your ideas and contributions are welcome! Feel free to:
 - ✨ Submit pull requests with improvements or new features.
 - Let's make travel planning fun and effortless for everyone!
 
+
+
+https://github.com/adityachavan198/gen-ai-travel-planner/assets/35609659/cd50eb25-04c8-4727-8e59-0a25e905e49b
+
+
+
